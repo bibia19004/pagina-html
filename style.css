@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, rgb(186, 148, 230), rgb(113, 34, 187));
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: #34085e;
+}
+
+h3 {
+    text-align: center;
+    color: #34085e;
+}
+h2{
+    text-align: left;
+    color: #34085e;
+    padding: 10px;
+    margin: 5px 0;
+}
+p{
+    padding: 10px;
+    margin: 0;
+    font-size: 21px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    width: 250px;
+}
+
+nav {
+    margin-bottom: 20px; 
+}
+
+.menu_list {
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.menu_item {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+.menu_link {
+    text-decoration: none; 
+    color: rgb(94, 38, 146);
+    font-weight: bold; 
+}
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    background-color: rgba(94, 38, 146, 0.8); /* Fundo semi-transparente */
+    color: rgb(194, 124, 226); /* Cor do texto */
+    position: relative; /* Posicionamento relativo */
+    bottom: 0; /* Fica na parte inferior */
+    width: 100%; /* Ocupa a largura total */
+    margin-top: 20px; /* Espaço acima do rodapé */
+}

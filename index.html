@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #sinopse {
+            display: none; /* Esconde a sinopse inicialmente */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu_list">
+            <li class="menu_item menu_item--active"><a href="#" id="home-link">Home</a></li>
+            <li class="menu_item"><a href="#" id="sinopse-link">Sinopse</a></li>
+            <li class="menu_item"><a href="https://www.amazon.com.br/Corte-espinhos-rosas-vol-ebook/dp/B01ACFIWT8/ref=sr_1_2?crid=1FTAABMYGBQBF&dib=eyJ2IjoiMSJ9.m4FMlwb30sTCxN-eco0gpeZUDpARwvSVkv4yZS4KX3IaVUiFpBk1_PmJJzS4m_oRfmC1HKxzmSOeE046nTp4IR3tvqecVDs_mwTeFcQjZTR94tAaGuv0rwn7b-J4ZDKVNyDpQQbSRB1TO5zLzQrThjm2mQw5TPb4dcHk_-bZsKFCHSpEHtVQQWMnxZ3nf4nLt4umCabzv7aiT8WhKSKOskNBL7c3pKkJ4JHL0E3L6uY.AT3qWAqpZtr3edDgMIwZxvAwT5OTuqvNoTcwI0ayzFc&dib_tag=se&keywords=corte+de+espinhos+e+rosas&qid=1727266995&s=books&sprefix=corte%2Cstripbooks%2C244&sr=1-2" class="menu_link" target="_blank">Comprar</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1>Meu livro favorito</h1>
+    <h3>Corte de Espinhos e Rosas</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKq_J0C9MPES6mDRcnLqsLUVU_f--rp4kEg&s" alt="Capa do Livro">
+
+    <div id="sinopse">
+        <h2>Sinopse</h2>
+        <p>Feyre, uma caçadora de dezanove anos, mata um lobo na floresta. Como consequência, uma criatura monstruosa aparece em busca de vingança e arrasta-a para uma terra encantada conhecida apenas através de lendas. Ali, porém, a sua prisão é um palácio magnífico e o seu carcereiro não é um monstro. Tamlin, o Grande Senhor da Corte da Primavera, trata-a como uma princesa. Durante a convivência forçada com ele, os sentimentos de Feyre passam de fria hostilidade a uma paixão que será vivida apesar das advertências. Mas há um mal...</p>
+    </div>
+
+    <script>
+        document.getElementById('sinopse-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            const sinopse = document.getElementById('sinopse');
+            sinopse.style.display = sinopse.style.display === 'none' ? 'block' : 'none'; // Alterna a exibição da sinopse
+        });
+
+        document.getElementById('home-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            const sinopse = document.getElementById('sinopse');
+            sinopse.style.display = 'none'; // Esconde a sinopse ao clicar em Home
+        });
+    </script>
+    <footer>
+        <p>Beatriz Becker 2B</p>
+    </footer>
+</body>
+</html>
